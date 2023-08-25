@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Lista de Pets";
+}
+
+<div class="text-center">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a role="button" class="btn btn-primary" asp-controller="Pet" asp-action="Criar"> Adicionar Pet</a>
+    </div>
+    <h1 class="display-4">Lista de Pets</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Raça</th>
+                <th scope="col">Gênero</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Guto</td>
+                <td>Shih-Tzu</td>
+                <td>M</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Pet" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Pet" asp-action="ApagarConfirmar">Apagar</a>
+                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Amora</td>
+                <td>Shih-Tzu</td>
+                <td>F</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Pet" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Pet" asp-action="ApagarConfirmar">Apagar</a>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Eduard</td>
+                <td>Pastor Alemão</td>
+                <td>M</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Pet" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Pet" asp-action="ApagarConfirmar">Apagar</a>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+   
+</div>
